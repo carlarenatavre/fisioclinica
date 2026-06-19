@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ficha de Avaliação Fisioterapia</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 1000px;
+        margin: 20px auto;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .linha {
+        margin-bottom: 15px;
+      }
+
+      label {
+        margin-right: 10px;
+      }
+
+      input[type='text'],
+      input[type='date'],
+      input[type='tel'] {
+        border: none;
+        border-bottom: 1px solid #000;
+        width: 250px;
+      }
+
+      textarea {
+        width: 100%;
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>FICHA DE AVALIAÇÃO FISIOTERAPIA</h2>
+
+    <form>
+      <div class="linha">
+        <label>Nome:</label>
+        <input type="text" name="nome" />
+
+        <label>Idade:</label>
+        <input type="text" name="idade" style="width: 60px" />
+
+        <label>Telefone:</label>
+        <input type="tel" name="telefone" />
+      </div>
+
+      <div class="linha">
+        <label>Convênio:</label>
+        <input type="text" name="convenio" />
+
+        <label>Data de Nascimento:</label>
+        <input type="date" name="nascimento" />
+      </div>
+
+      <div class="linha">
+        <label>Médico Responsável:</label>
+        <input type="text" name="medico" style="width: 400px" />
+      </div>
+
+      <div class="linha">
+        <label>Diagnóstico Clínico:</label>
+        <input type="text" name="diagnostico" style="width: 500px" />
+      </div>
+
+      <hr />
+
+      <div class="linha">
+        <strong>1 - Apresenta alterações renais?</strong>
+        <input type="radio" name="renal" value="sim" /> Sim
+        <input type="radio" name="renal" value="nao" /> Não
+      </div>
+
+      <div class="linha">
+        <strong>2 - Possui haste metálica?</strong>
+        <input type="radio" name="haste" value="sim" /> Sim
+        <input type="radio" name="haste" value="nao" /> Não
+
+        <label>Local:</label>
+        <input type="text" name="local_haste" />
+      </div>
+
+      <div class="linha">
+        <strong>3 - Pratica atividade física?</strong>
+        <input type="radio" name="atividade" value="sim" /> Sim
+        <input type="radio" name="atividade" value="nao" /> Não
+
+        <label>Qual?</label>
+        <input type="text" name="qual_atividade" />
+      </div>
+
+      <div class="linha">
+        <strong>4 - Queixa principal:</strong><br />
+        <textarea name="queixa"></textarea>
+      </div>
+
+      <div class="linha">
+        <strong>5 - Já realizou cirurgia?</strong>
+        <input type="radio" name="cirurgia" value="sim" /> Sim
+        <input type="radio" name="cirurgia" value="nao" /> Não
+
+        <label>Qual?</label>
+        <input type="text" name="qual_cirurgia" />
+
+        <label>Data:</label>
+        <input type="date" name="data_cirurgia" />
+      </div>
+
+      <div class="linha">
+        <strong>6 - Já realizou cirurgia na vesícula biliar?</strong>
+        <input type="radio" name="vesicula" value="sim" /> Sim
+        <input type="radio" name="vesicula" value="nao" /> Não
+      </div>
+
+      <div class="linha">
+        <strong>7 - Já realizou cirurgia cardíaca ou cateterismo?</strong>
+        <input type="radio" name="cardiaca" value="sim" /> Sim
+        <input type="radio" name="cardiaca" value="nao" /> Não
+
+        <label>Possui Stent de metal?</label>
+        <input type="radio" name="stent" value="sim" /> Sim
+        <input type="radio" name="stent" value="nao" /> Não
+      </div>
+
+      <div class="linha">
+        <strong>8 - Doença hereditária?</strong>
+        <input type="radio" name="hereditaria" value="sim" /> Sim
+        <input type="radio" name="hereditaria" value="nao" /> Não
+
+        <label>Qual?</label>
+        <input type="text" name="qual_hereditaria" />
+      </div>
+
+      <div class="linha">
+        <strong>9 - Faz outro tipo de tratamento?</strong>
+        <input type="radio" name="tratamento" value="sim" /> Sim
+        <input type="radio" name="tratamento" value="nao" /> Não
+
+        <label>Qual?</label>
+        <input type="text" name="qual_tratamento" />
+      </div>
+
+      <div class="linha">
+        <strong>10 - HPP:</strong><br />
+        <textarea name="hpp"></textarea>
+      </div>
+
+      <div class="linha">
+        <strong>11 - Possui outras patologias?</strong>
+        <input type="radio" name="patologias" value="sim" /> Sim
+        <input type="radio" name="patologias" value="nao" /> Não
+      </div>
+
+      <div class="linha">
+        <input type="checkbox" /> Diabetes <input type="checkbox" /> Doença
+        Neurológica <input type="checkbox" /> Alteração Renal
+        <input type="checkbox" /> Hipertensão <input type="checkbox" /> Tumor
+        <input type="checkbox" /> Doença Cardíaca
+      </div>
+
+      <div class="linha">
+        <input type="checkbox" /> Doença Vascular
+        <input type="checkbox" /> Doença Ginecológica
+        <input type="checkbox" /> Doença Reumatológica
+        <input type="checkbox" /> Está Grávida
+      </div>
+
+      <br />
+
+      <button type="submit">Salvar Avaliação</button>
+    </form>
+  </body>
+</html>
